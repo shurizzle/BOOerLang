@@ -1,0 +1,10 @@
+#!/usr/bin/env escript
+%% -*- erlang -*-
+%%! -pa ebin
+
+main(["single"]) ->
+  {MicroSeconds, _} = timer:tc(fun() -> booerlang:eval("(tette || culo) && !vagina"), ok end),
+  io:format("Execution time: ~fs~n", [MicroSeconds * (math:pow(10, -6))]);
+main(_) ->
+  {MicroSeconds, _} = timer:tc(fun() -> [booerlang:eval("(tette || culo) && !vagina") || _ <- lists:seq(1, 10000)], ok end),
+  io:format("Execution time: ~fs~n", [MicroSeconds * (math:pow(10, -6))]).
