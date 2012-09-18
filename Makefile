@@ -8,7 +8,10 @@
 	@echo "LEEX $<"
 	@erlc -o "$$(dirname $*)" $<
 
-compile: src/booerlang_lexer.erl src/booerlang_parser.erl src/booerlang.erl
+ebin:
+	@mkdir -p ebin
+
+compile: ebin src/booerlang_lexer.erl src/booerlang_parser.erl src/booerlang.erl
 	@echo "EMAKE"
 	@erl -make
 
