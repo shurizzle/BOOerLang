@@ -9,6 +9,7 @@ C   = [a-zA-Z0-9]
 
 Rules.
 
+\^    : {token,{'xor', TokenLine}}.
 !     : {token,{'not',TokenLine}}.
 \&\&  : {token,{'and',TokenLine}}.
 \|\|  : {token,{'or',TokenLine}}.
