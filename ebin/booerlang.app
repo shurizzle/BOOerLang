@@ -1,0 +1,10 @@
+{application,booerlang,
+             [{description, []},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{booerlang,[]}},
+              {env,[]},
+              {modules,[booerlang,
+                        booerlang_lexer,
+                        booerlang_parser]}]}.
